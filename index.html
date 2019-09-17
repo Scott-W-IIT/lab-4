@@ -36,10 +36,11 @@ $age = $_REQUEST['age_field'];
 	<h2>This section contains the information provided in the "my info" section:</h2>
 	  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
 		<p><strong>First Name:</strong> <?php echo htmlentities($firstName) ?></p>
-		  <input type="text" name="firstname" value="example: Dweezle">
+		  <input type="text" name="firstname" placeholder="i.e. Dweezle">
 		<p><strong>Last Name:</strong> <?php echo htmlentities($lastName) ?></p>
-		  <input type="text" name="lastname" value="example: Zappa">
+		  <input type="text" name="lastname" value="i.e. Zappa">
 		<p><strong>Phone Number:</strong> <?php echo htmlentities($phone) ?></p>
+		  
 		<p><strong>Email Address:</strong> <?php echo htmlentities($email) ?></p>
 		<p><strong>Gender:</strong> <?php echo htmlentities($gender) ?></p>
 		<p><strong>Age:</strong> <?php echo htmlentities($age) ?></p>
