@@ -43,10 +43,13 @@ $age = $_REQUEST['age_field'];
 		  <input type="tel" name="phone" placeholder="555-555-5555"><br>
 		<label><strong>Email Address:</strong> <?php echo htmlentities($email) ?></label>
 		  <input type="email" name="email" placeholder="you@dork.corn"><br>
-		<label><strong>Gender:</strong> <?php echo htmlentities($gender) ?></label>
-		  <input type="radio" name="Gender" value="wīfmann"> wīfmann <br>
-		  <input type="radio" name="Gender" value="weremann"> weremann <br>
-		  <input type="radio" name="Gender" value="mann"> mann <br>
+		<label><strong>Gender:</strong> <?php echo htmlentities($gender) ?></label><br>
+		  <input type="radio" name="Gender" value="Woman"> Woman <br>
+		  <input type="radio" name="Gender" value="Man"> Man <br>
+		  <input type="radio" name="Gender" value="Neither"> Neither<br>
+		  <input type="radio" name="Gender" value="Both"> Both<br>
+		  <input type="radio" name="Gender" value="Else"> Else<br>
+		  <input type="text" name="Gender" placeholder="Enter Treatise on Gender Theory"><br>
 		<p><strong>Age:</strong> <?php echo htmlentities($age) ?></p>
 	  </form>
 	</div>
