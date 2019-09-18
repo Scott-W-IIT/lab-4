@@ -32,6 +32,7 @@ $age = $_REQUEST['age_field'];
 	</div>
 	<hr><br>
 	<h1>Thank you for your ITMD-361 form submission<?php echo htmlentities($firstName) ?>!</h1>
+	
 	<div class="box">
 	<h2>This section contains the information provided in the "my info" section:</h2>
 	  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
@@ -44,12 +45,12 @@ $age = $_REQUEST['age_field'];
 		<label><strong>Email Address:</strong> <?php echo htmlentities($email) ?></label>
 		  <input type="email" name="email" placeholder="pork@snork.corn"><br>
 		<label><strong>Gender:</strong> <?php echo htmlentities($gender) ?></label><br>
-		  <input type="radio" name="Gender" value="Woman"> Woman <br>
-		  <input type="radio" name="Gender" value="Man"> Man <br>
-		  <input type="radio" name="Gender" value="Neither"> Neither<br>
-		  <input type="radio" name="Gender" value="Both"> Both<br>
-		  <input type="radio" name="Gender" value="Else"> Else<br>
-		  <input type="radio" name="Gender" value="Description">
+		  <input type="radio" name="gender" value="Woman"> Woman <br>
+		  <input type="radio" name="gender" value="Man"> Man <br>
+		  <input type="radio" name="gender" value="Neither"> Neither<br>
+		  <input type="radio" name="gender" value="Both"> Both<br>
+		  <input type="radio" name="gender" value="Else"> Else<br>
+		  <input type="radio" name="gender" value="Description"
 		  <textarea rows="4" cols="65">
 		  Use this space to describe a gender theory with, perhaps, more nuance than the traditional binary
 		  </textarea><br>
@@ -68,6 +69,7 @@ $age = $_REQUEST['age_field'];
 	<div class="box">
 	<h2>This section contains the information provided in the availibility section:</h2>
 	<h3>Days Selected as Available:</h3>
+	<form>
 	<?php
 		if (is_array($available)){
 			foreach ($available as $ckvalue) {
@@ -79,6 +81,7 @@ $age = $_REQUEST['age_field'];
 	?>
 	<h3>Comments:</h3>
 	<p><?php echo nl2br(htmlentities($comments)) ?></p>
+	</form>
 	</div>
 	<div class="box">
 	<h2>This section contains the hidden information:</h2>
