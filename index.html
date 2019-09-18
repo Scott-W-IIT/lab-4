@@ -37,12 +37,16 @@ $age = $_REQUEST['age_field'];
 	  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
 		<label><strong>First Name:</strong> <?php echo htmlentities($firstName) ?></label>
 		  <input type="text" name="firstname" placeholder="i.e. Dweezle">
-		<p><strong>Last Name:</strong> <?php echo htmlentities($lastName) ?></p>
+		<label><strong>Last Name:</strong> <?php echo htmlentities($lastName) ?></label>
 		  <input type="text" name="lastname" placeholder="i.e. Zappa">
-		<p><strong>Phone Number:</strong> <?php echo htmlentities($phone) ?></p>
-		  
-		<p><strong>Email Address:</strong> <?php echo htmlentities($email) ?></p>
-		<p><strong>Gender:</strong> <?php echo htmlentities($gender) ?></p>
+		<label><strong>Phone Number:</strong> <?php echo htmlentities($phone) ?></label>
+		  <input type="tel" name="phone" placeholder="555-555-5555">
+		<label><strong>Email Address:</strong> <?php echo htmlentities($email) ?></label>
+		  <input type="email" name="email" placeholder="you@dork.corn">
+		<label><strong>Gender:</strong> <?php echo htmlentities($gender) ?></label>
+		  <input type="radio" name="Gender" value="wīfmann">
+		  <input type="radio" name="Gender" value="weremann">
+		  <input type="radio" name="Gender" value="mann">
 		<p><strong>Age:</strong> <?php echo htmlentities($age) ?></p>
 	  </form>
 	</div>
