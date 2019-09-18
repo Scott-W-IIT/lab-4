@@ -50,7 +50,16 @@ $age = $_REQUEST['age_field'];
 		  <input type="radio" name="Gender" value="Both"> Both<br>
 		  <input type="radio" name="Gender" value="Else"> Else<br>
 		  <input type="text" name="Gender" placeholder="Gender Theory"> Enter your own treatise on gender theory<br>
-		<p><strong>Age:</strong> <?php echo htmlentities($age) ?></p>
+		<label><strong>Age:</strong> <?php echo htmlentities($age) ?></label>
+		  <select>
+		  <option value="Under 18"> Under 18</option>
+		  <option value="18-24"> 18-24</option>
+		  <option value="25-34"> 25-34</option>
+		  <option value="35-44"> 35-44</option>
+		  <option value="45-54"> 45-54</option>
+		  <option value="55-64"> 55-64</option>
+		  <option value="65+"> 65+</option>
+		  </select>
 	  </form>
 	</div>
 	<div class="box">
