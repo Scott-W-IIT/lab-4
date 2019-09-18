@@ -50,7 +50,7 @@ $age = $_REQUEST['age_field'];
 		  <input type="radio" name="gender" value="Neither"> Neither<br>
 		  <input type="radio" name="gender" value="Both"> Both<br>
 		  <input type="radio" name="gender" value="Else"> Else<br>
-		  <input type="radio" name="gender" value="Description"
+		  <input type="radio" name="gender" value="Description">
 		  <textarea rows="4" cols="65">
 		  Use this space to describe a gender theory with, perhaps, more nuance than the traditional binary
 		  </textarea><br>
@@ -70,15 +70,15 @@ $age = $_REQUEST['age_field'];
 	<h2>This section contains the information provided in the availibility section:</h2>
 	<h3>Days Selected as Available:</h3>
 	<form>
-	<?php
-		if (is_array($available)){
-			foreach ($available as $ckvalue) {
-				echo ('<p>' . htmlentities($ckvalue) . '</p>');
-			}
-		} else {
-			echo ('<p>' . htmlentities($available) . '</p>');
-		}
-	?>
+<?php
+if (is_array($available)){
+foreach ($available as $ckvalue) {
+echo ('<p>' . htmlentities($ckvalue) . '</p>');
+}
+} else {
+echo ('<p>' . htmlentities($available) . '</p>');
+}
+?>
 	<h3>Comments:</h3>
 	<p><?php echo nl2br(htmlentities($comments)) ?></p>
 	</form>
