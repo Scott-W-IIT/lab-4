@@ -16,13 +16,13 @@
 	    <fieldset>
 	      <legend>Basics</legend>
 		    <label><strong>First Name:</strong></label>
-		    <input type="text" name="$firstName" placeholder="i.e. Dweezle"><br>
+		    <input type="text" name="first_name_field" placeholder="i.e. Dweezle"><br>
 		    <label><strong>Last Name:</strong></label>
-		    <input type="text" name="lastname" placeholder="i.e. Zappa"><br>
+		    <input type="text" name="'last_name_field'" placeholder="i.e. Zappa"><br>
 		    <label><strong>Phone Number:</strong></label>
-		    <input type="tel" name="phone" placeholder="555-555-5555"><br>
+		    <input type="tel" name="['phone_field']" placeholder="555-555-5555"><br>
 		    <label><strong>Email Address:</strong></label>
-		    <input type="email" name="email" placeholder="pork@snork.corn"><br>
+		    <input type="email" name="$_REQUEST['email_field']" placeholder="pork@snork.corn"><br>
 		    <label><strong>Gender:</strong></label><br>
 		      <input type="radio" name="gender" value="Woman"> Woman <br>
 		      <input type="radio" name="gender" value="Man"> Man <br>
@@ -60,6 +60,7 @@ Use this space to write in your own gender theory
 Questions can go here too.
 	          </textarea><label>
 	  <input type="submit" value="Submit">
+	  </fieldset>
 	<div class="box">
 	<h2>This section contains the hidden information:</h2>
 		<p><strong>HTML Form created by:</strong></p>
