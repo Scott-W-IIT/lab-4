@@ -1,50 +1,27 @@
 
-<?php
-//Make short Variable names
-$firstName = $_REQUEST['first_name_field'];
-$lastName = $_REQUEST['last_name_field'];
-$phone = $_REQUEST['phone_field'];
-$email = $_REQUEST['email_field'];
-$hidden = $_REQUEST['hidden_field'];
-$comments = $_REQUEST['comments_field'];
-$gender = $_REQUEST['gender_field'];
-$available = $_REQUEST['available_field'];
-$age = $_REQUEST['age_field'];
-?>
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>ITMD-361 Lab 4 Form Processing Script</title>
-		<style>
-		.box {
-			border: 1px solid #444;
-			background-color: #ccc;
-			margin: 20px 20px;
-			padding: 5px 20px;
-		}
-	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ITMD-361 Lab 4 Form</title>
 </head>
 <body>
-	<div style="text-align:center;">
-		<h2>ITMD-361 Lab 4 Form Processing Script</h2>
-		<p>This page will display the results of the form that was submitted to it.</p>
-	</div>
-	<hr><br>
-	<h1>Thank you for your ITMD-361 form submission<?php echo htmlentities($firstName) ?>!</h1>
 	
-	<div class="box">
-	<h2>This section contains the information provided in the "my info" section:</h2>
+	<h1>Volunteer Form</h1>
+	
+<section>
+	<h2>Put Your Specifics Here</h2>
 	  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
-		<label><strong>First Name:</strong> <?php echo htmlentities($firstName) ?></label>
+		<label><strong>First Name:</strong></label>
 		  <input type="text" name="firstname" placeholder="i.e. Dweezle"><br>
-		<label><strong>Last Name:</strong> <?php echo htmlentities($lastName) ?></label>
+		<label><strong>Last Name:</strong></label>
 		  <input type="text" name="lastname" placeholder="i.e. Zappa"><br>
-		<label><strong>Phone Number:</strong> <?php echo htmlentities($phone) ?></label>
+		<label><strong>Phone Number:</strong></label>
 		  <input type="tel" name="phone" placeholder="555-555-5555"><br>
-		<label><strong>Email Address:</strong> <?php echo htmlentities($email) ?></label>
+		<label><strong>Email Address:</strong></label>
 		  <input type="email" name="email" placeholder="pork@snork.corn"><br>
-		<label><strong>Gender:</strong> <?php echo htmlentities($gender) ?></label><br>
+		<label><strong>Gender:</strong></label><br>
 		  <input type="radio" name="gender" value="Woman"> Woman <br>
 		  <input type="radio" name="gender" value="Man"> Man <br>
 		  <input type="radio" name="gender" value="Neither"> Neither<br>
@@ -54,19 +31,19 @@ $age = $_REQUEST['age_field'];
 		  <textarea rows="4" cols="65">
 		  Use this space to write in your own gender theory
 		  </textarea><br>
-		<label><strong>Age:</strong> <?php echo htmlentities($age) ?></label>
+		<label><strong>Age:</strong></label>
 		  <select name="age">
-		  <option value="Under 18"> Under 18</option>
-		  <option value="18-24"> 18-24</option>
-		  <option value="25-34"> 25-34</option>
-		  <option value="35-44"> 35-44</option>
-		  <option value="45-54"> 45-54</option>
-		  <option value="55-64"> 55-64</option>
-		  <option value="65+"> 65+</option>
+		    <option value="Pick"> Pick</option>
+		    <option value="Under 18"> Under 18</option>
+		    <option value="18-24"> 18-24</option>
+		    <option value="25-34"> 25-34</option>
+		    <option value="35-44"> 35-44</option>
+		    <option value="45-54"> 45-54</option>
+		    <option value="55-64"> 55-64</option>
+		    <option value="65+"> 65+</option>
 		  </select>
-
-	</div>
-	<div class="box">
+</section>
+<section>
 	<h2>This section contains the information provided in the availibility section:</h2>
 	<h3>Days Selected as Available:</h3>
       <input type="checkbox" name="available" value="Sunday"> Sunday <br>
@@ -77,16 +54,15 @@ $age = $_REQUEST['age_field'];
       <input type="checkbox" name="available" value="Friday"> Friday <br>
       <input type="checkbox" name="available" value="Saturday"> Saturday <br>
 	<h3>Comments:</h3>
-	<label><?php echo nl2br(htmlentities($comments)) ?>
 	  <textarea rows="4" cols="65">
 	  Questions can go here too.
 	  </textarea><label>
 	  <input type="submit" value="Submit">
-	</div>
+</sectio>
 	<div class="box">
 	<h2>This section contains the hidden information:</h2>
-		<p><strong>HTML Form created by:</strong> <?php echo htmlentities($hidden) ?></p>
+		<p><strong>HTML Form created by:</strong></p>
 		</form>
 	</div>
 </body>
-</html>≠=
+</html>
