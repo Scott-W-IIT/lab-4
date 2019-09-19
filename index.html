@@ -13,52 +13,57 @@
 <section>
 	<h2>Put Your Specifics Here</h2>
 	  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
-		<label><strong>First Name:</strong></label>
-		  <input type="text" name="firstname" placeholder="i.e. Dweezle"><br>
-		<label><strong>Last Name:</strong></label>
-		  <input type="text" name="lastname" placeholder="i.e. Zappa"><br>
-		<label><strong>Phone Number:</strong></label>
-		  <input type="tel" name="phone" placeholder="555-555-5555"><br>
-		<label><strong>Email Address:</strong></label>
-		  <input type="email" name="email" placeholder="pork@snork.corn"><br>
-		<label><strong>Gender:</strong></label><br>
-		  <input type="radio" name="gender" value="Woman"> Woman <br>
-		  <input type="radio" name="gender" value="Man"> Man <br>
-		  <input type="radio" name="gender" value="Neither"> Neither<br>
-		  <input type="radio" name="gender" value="Both"> Both<br>
-		  <input type="radio" name="gender" value="Else"> Else<br>
-		  <input type="radio" name="gender" value="Description">
-		  <textarea rows="4" cols="65">
-		  Use this space to write in your own gender theory
-		  </textarea><br>
-		<label><strong>Age:</strong></label>
-		  <select name="age">
-		    <option value="Pick"> Pick</option>
-		    <option value="Under 18"> Under 18</option>
-		    <option value="18-24"> 18-24</option>
-		    <option value="25-34"> 25-34</option>
-		    <option value="35-44"> 35-44</option>
-		    <option value="45-54"> 45-54</option>
-		    <option value="55-64"> 55-64</option>
-		    <option value="65+"> 65+</option>
-		  </select>
-</section>
-<section>
-	<h2>This section contains the information provided in the availibility section:</h2>
-	<h3>Days Selected as Available:</h3>
-      <input type="checkbox" name="available" value="Sunday"> Sunday <br>
-      <input type="checkbox" name="available" value="Monday"> Monday <br>
-      <input type="checkbox" name="available" value="Tuesday"> Tuesday <br>
-      <input type="checkbox" name="available" value="Wednesday"> Wednesday <br>
-      <input type="checkbox" name="available" value="Thursday"> Thursday <br>
-      <input type="checkbox" name="available" value="Friday"> Friday <br>
-      <input type="checkbox" name="available" value="Saturday"> Saturday <br>
-	<h3>Comments:</h3>
-	  <textarea rows="4" cols="65">
-	  Questions can go here too.
-	  </textarea><label>
+	    <fieldset>
+	      <lengend>Basics</legend>
+		    <label><strong>First Name:</strong></label>
+		    <input type="text" name="firstname" placeholder="i.e. Dweezle"><br>
+		    <label><strong>Last Name:</strong></label>
+		    <input type="text" name="lastname" placeholder="i.e. Zappa"><br>
+		    <label><strong>Phone Number:</strong></label>
+		    <input type="tel" name="phone" placeholder="555-555-5555"><br>
+		    <label><strong>Email Address:</strong></label>
+		    <input type="email" name="email" placeholder="pork@snork.corn"><br>
+		    <label><strong>Gender:</strong></label><br>
+		      <input type="radio" name="gender" value="Woman"> Woman <br>
+		      <input type="radio" name="gender" value="Man"> Man <br>
+		      <input type="radio" name="gender" value="Neither"> Neither<br>
+		      <input type="radio" name="gender" value="Both"> Both<br>
+		      <input type="radio" name="gender" value="Else"> Else<br>
+		      <input type="radio" name="gender" value="Description">
+		      <textarea rows="4" cols="65">
+Use this space to write in your own gender theory
+		      </textarea><br>
+		  <label><strong>Age:</strong></label>
+		    <select name="age">
+		      <option value="Pick"> Pick</option>
+		      <option value="Under 18"> Under 18</option>
+		      <option value="18-24"> 18-24</option>
+		      <option value="25-34"> 25-34</option>
+		      <option value="35-44"> 35-44</option>
+		      <option value="45-54"> 45-54</option>
+		      <option value="55-64"> 55-64</option>
+		      <option value="65+"> 65+</option>
+		    </select>
+		    <input type="submit" value="Submit">
+	    </fieldset>
+	  </form>
+	  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+        <fieldset>
+          <legend>Availability</legend>
+	        <h3>Days Selected as Available:</h3>
+              <input type="checkbox" name="available" value="Sunday"> Sunday <br>
+              <input type="checkbox" name="available" value="Monday"> Monday <br>
+              <input type="checkbox" name="available" value="Tuesday"> Tuesday <br>
+              <input type="checkbox" name="available" value="Wednesday"> Wednesday <br>
+              <input type="checkbox" name="available" value="Thursday"> Thursday <br>
+              <input type="checkbox" name="available" value="Friday"> Friday <br>
+              <input type="checkbox" name="available" value="Saturday"> Saturday <br>
+	        <h3>Comments:</h3>
+	          <textarea rows="4" cols="65">
+Questions can go here too.
+	          </textarea><label>
 	  <input type="submit" value="Submit">
-</sectio>
+</section>
 	<div class="box">
 	<h2>This section contains the hidden information:</h2>
 		<p><strong>HTML Form created by:</strong></p>
